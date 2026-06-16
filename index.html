@@ -100,6 +100,7 @@
 
     <div id="status-area">
         <div id="face-display">
+            <!-- 初期表示画像を 1.png に変更 -->
             <img id="face-image" src="1.png" alt="キャラクターの顔">
         </div>
 
@@ -130,6 +131,7 @@
             document.getElementById('status-label').innerText = "👂 こえを きいています... おはなししてね";
             document.getElementById('level-number').innerText = "⏱️";
             document.getElementById('message').innerText = "おはなしちゅう";
+            // 録音中の表示画像を 3.png に変更
             document.getElementById('face-image').src = "3.png"; // お話中は笑顔
             document.getElementById('face-image').className = ""; 
             document.body.style.backgroundColor = "#FFF9C4"; // 背景を薄い黄色に
@@ -193,7 +195,7 @@
                 });
         }
 
-        // 3. 【判定結果の表示】PDFのデータに基づいた5段階表示
+        // 3. 【判定結果の表示】5段階表示
         function showResult(level) {
             const body = document.body;
             const faceImg = document.getElementById('face-image');
