@@ -100,7 +100,7 @@
 
     <div id="status-area">
         <div id="face-display">
-            <img id="face-image" src="1.jpg" alt="キャラクターの顔">
+            <img id="face-image" src="1.png" alt="キャラクターの顔">
         </div>
 
         <div id="level-number">-</div>
@@ -130,7 +130,7 @@
             document.getElementById('status-label').innerText = "👂 こえを きいています... おはなししてね";
             document.getElementById('level-number').innerText = "⏱️";
             document.getElementById('message').innerText = "おはなしちゅう";
-            document.getElementById('face-image').src = "3.jpg"; // お話中は笑顔
+            document.getElementById('face-image').src = "3.png"; // お話中は笑顔
             document.getElementById('face-image').className = ""; 
             document.body.style.backgroundColor = "#FFF9C4"; // 背景を薄い黄色に
 
@@ -206,32 +206,32 @@
             if (level === 1) {
                 // 1：こえなし
                 body.style.backgroundColor = "#E3F2FD"; // 青
-                faceImg.src = "1.jpg";
+                faceImg.src = "1.png";
                 message.innerText = "1：こえなし (🤫)";
                 numDisplay.style.color = "#0D47A1";
             } else if (level === 2) {
                 // 2：ちいさなこえ
                 body.style.backgroundColor = "#E0F7FA"; // 水色
-                faceImg.src = "1.jpg";
+                faceImg.src = "2.png";
                 message.innerText = "2：ちいさなこえ (🤫)";
                 numDisplay.style.color = "#006064";
             } else if (level === 3) {
                 // 3：ふつうのこえ
                 body.style.backgroundColor = "#E8F5E9"; // 緑
-                faceImg.src = "3.jpg";
+                faceImg.src = "3.png";
                 faceImg.classList.add("bounce"); // ✨ ごきげんにピョコピョコ縦揺れする動き！
                 message.innerText = "3：ふつうのこえ (😊)";
                 numDisplay.style.color = "#1B5E20";
             } else if (level === 4) {
                 // 4：おおきいこえ
                 body.style.backgroundColor = "#FFFDE7"; // 黄色
-                faceImg.src = "4.jpg";
+                faceImg.src = "4.png";
                 message.innerText = "4：おおきいこえ (😮)";
                 numDisplay.style.color = "#F57F17";
             } else {
                 // 5：さけびこえ
                 body.style.backgroundColor = "#FFEBEE"; // 赤
-                faceImg.src = "5.jpg";
+                faceImg.src = "5.png";
                 faceImg.classList.add("shake"); // ✨ ガタガタ震える動き！
                 message.innerText = "5：さけびこえ (😣)";
                 numDisplay.style.color = "#B71C1C";
